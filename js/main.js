@@ -156,7 +156,7 @@ function changeInstruction() {
     if (App.clickCount === 1) {
         $('#instruction-text').addClass('animated hinge')
         setTimeout(function() {
-            $('#instruction-text').text('Keep Clicking');
+            $('#instruction-text').text('Keep Clicking111');
         }, 200);
 
         loadImages(5);
