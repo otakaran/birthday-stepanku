@@ -152,7 +152,7 @@ function playNote() {
 /**
  * Change instruction based on the click number
  */
-    
+function changeInstruction() {
     if (App.clickCount === 10) {
         $('#instruction-text').addClass('animated hinge')
         setTimeout(function() {
