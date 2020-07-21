@@ -211,7 +211,7 @@ function changeInstruction() {
     if (App.clickCount === 30) {
         $('#instruction-text').addClass('animated rollOut');
         setTimeout(function() {
-            $('#instruction-text').text('Happy Birthday!');
+            $('#instruction-text').text('Happy Birthday Stepanku!\n From Otakar, Jana, Jirka, a Muffin!');
             $('#instruction-text').removeClass();
             $('#instruction-text').addClass('animated bounceInDown')
         }, 200);
