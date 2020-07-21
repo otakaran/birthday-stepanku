@@ -157,8 +157,6 @@ function changeInstruction() {
         $('#instruction-text').addClass('animated hinge')
         setTimeout(function() {
             $('#instruction-text').text('Keep Clicking');
-            $('#instruction-text').removeClass();
-            $('#instruction-text').addClass('animated bounceInDown')
         }, 200);
 
         loadImages(5);
