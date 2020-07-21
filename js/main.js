@@ -155,7 +155,7 @@ function playNote() {
 function changeInstruction() {
     if (App.clickCount === 1) {
         setTimeout(function() {
-            $('#instruction-text').text('Keep Clicking111');
+            $('#instruction-text').text('Keep Clicking222');
             $('#instruction-text').removeClass();
             $('#instruction-text').addClass('animated bounceInDown')
         }, 200);
