@@ -153,10 +153,54 @@ function playNote() {
  * Change instruction based on the click number
  */
 function changeInstruction() {
-    if (App.clickCount === 10) {
+    if (App.clickCount === 1) {
         $('#instruction-text').addClass('animated hinge')
         setTimeout(function() {
-            $('#instruction-text').text('Then try clicking the gift below');
+            $('#instruction-text').text('Keep Clicking');
+            $('#instruction-text').removeClass();
+            $('#instruction-text').addClass('animated bounceInDown')
+        }, 200);
+
+        loadImages(5);
+    } 
+    
+    if (App.clickCount === 5) {
+        $('#instruction-text').addClass('animated hinge')
+        setTimeout(function() {
+            $('#instruction-text').text('More!!!');
+            $('#instruction-text').removeClass();
+            $('#instruction-text').addClass('animated bounceInDown')
+        }, 200);
+
+        loadImages(5);
+    } 
+    
+    if (App.clickCount === 15) {
+        $('#instruction-text').addClass('animated hinge')
+        setTimeout(function() {
+            $('#instruction-text').text('Faster!!!!!!! :)');
+            $('#instruction-text').removeClass();
+            $('#instruction-text').addClass('animated bounceInDown')
+        }, 200);
+
+        loadImages(5);
+    } 
+    
+    if (App.clickCount === 25) {
+        $('#instruction-text').addClass('animated hinge')
+        setTimeout(function() {
+            $('#instruction-text').text('Then try clicking the gift below\nMake sure your sound is on!');
+            $('#instruction-text').removeClass();
+            $('#instruction-text').addClass('animated bounceInDown')
+        }, 200);
+
+        loadImages(5);
+    } 
+    
+    if (App.clickCount === 26) {
+        $('#instruction-text').addClass('animated hinge')
+        setTimeout(function() {
+            $('#instruction-text').text('Keep clicking... Make sure your sound is on!!');
             $('#instruction-text').removeClass();
             $('#instruction-text').addClass('animated bounceInDown')
         }, 200);
@@ -164,7 +208,7 @@ function changeInstruction() {
         loadImages(5);
     } 
 
-    if (App.clickCount === 15) {
+    if (App.clickCount === 30) {
         $('#instruction-text').addClass('animated rollOut');
         setTimeout(function() {
             $('#instruction-text').text('Happy Birthday!');
